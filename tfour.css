@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("img/back.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    margin: 5%;
+    padding: 2rem;
+    border-radius: 25px;
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container .picture {
+    background-image: url("img/taxi2.png");
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
+
+.container .right {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.container .right .heading {
+    color: cornflowerblue;
+    text-decoration: underline;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.container .right .row, 
+.container .right .col {
+    margin: 0.5rem 0;
+}
+
+.container .right input {
+    padding: 0.5rem;
+    width: calc(100% - 1rem);
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.container .right button {
+    background-color: rgb(78, 118, 175);
+    color: white;
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    width: calc(100% - 2rem);
+    border: 1px solid black;
+    border-radius: 10px;
+    display: block;
+}
+
+.container .right button:hover {
+    background-color: cornflowerblue;
+    color: rgb(5, 15, 52);
+}
+
+.container .bottom {
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container .bottom .row {
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+
+.container .bottom .col input {
+    background-color: white;
+    width: calc(100% - 1rem);
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid black;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+/* Media Queries */
+@media (min-width: 600px) {
+    .container .picture {
+        width: 48%;
+        height: 50vh;
+        margin-bottom: 0;
+    }
+
+    .container .right {
+        width: 48%;
+    }
+}
+
+@media (min-width: 768px) {
+    .container .right input,
+    .container .right button,
+    .container .bottom .col input {
+        width: 100%;
+    }
+}

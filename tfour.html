@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tfour.css">
+</head>
+<body>
+    <div class="container">
+        <div class="picture">
+            <img src="" alt="">
+        </div>
+        <div class="right">
+        <form id="form">
+            <div class="heading">Book a Taxi!</div>
+            <!--First Name-->
+            <div class="row">
+                <label for="fname">First Name</label>
+                <div class="col">
+                    <input type="text" id="fname" name="fname" placeholder="Enter First Name">
+                </div>
+                <span style="color: rgb(255, 0, 0); font-size: small;" id="fname_error"></span>
+            </div>
+            <!--Last Name-->
+            <div class="row">
+                <label for="lname">Last Name</label>
+                <div class="col">
+                    <input type="text" id="lname" name="lname" placeholder="Enter Last Name">
+                </div>
+                <span style="color: red;font-size: small;" id="lname_error"></span>
+            </div>
+            <!--Email-->
+            <div class="row">
+                <label for="email">Email Address</label>
+                <div class="col">
+                    <input type="email" id="email" name="email" placeholder="Enter Email Address">
+                </div>
+                <span style="color: red;font-size: small;" id="email_error"></span>
+            </div>
+            <!--Number of Members-->
+            <div class="row">
+                <label for="Members">Members</label>
+                <div class="col">
+                    <input type="number" id="members" name="members" placeholder="Enter Number of Members">
+                </div>
+                <span style="color: red;font-size: small;" id="members_error"></span>
+            </div>
+            <!--Contact Number-->
+            <div class="row">
+                <label for="cnum">Contact Number</label>
+                <div class="col">
+                    <input type="number" id="mobile" name="mobile" placeholder="Enter Contact Number">
+                </div>
+                <span style="color: red;font-size: small;" id="mobile_error"></span>
+            </div>
+            <!--Address-->
+            <div class="row">
+                <label for="Address">Address</label>
+                <div class="col">
+                    <input type="text" id="address" name="address" placeholder="Enter Your Address">
+                </div>
+                <span style="color: red;font-size: small;" id="address_error"></span>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="bottom">
+        <!--Pickup Address-->
+        <div class="row">
+            <label for="PLocation">Pick-Up Point</label>
+            <div class="col">
+                <input type="text" id="pickup" name="pickup" placeholder="Pick-Up Address">
+            </div>
+            <span style="color: red;font-size: small;" id="pickup_error"></span>
+        </div>
+        <i id="icon" class="fa-regular fa-arrow-right-arrow-left"></i>
+        <!--Dropping Address-->
+        <div class="row">
+            <label for="Dlocation">Dropping Point</label>
+            <div class="col">
+                <input type="text" id="drop" name="drop" placeholder="Dropping Address">
+            </div>
+            <span style="color: red;font-size: small;" id="drop_error"></span>
+        </div>
+    </div>
+    </div>
+    <script src="tfour.js"></script>
+</body>
+</html>
